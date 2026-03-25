@@ -1,7 +1,7 @@
 export default async function NewsPage() {
   // Strictly filter for Formula 1 and use specific F1-only domains to avoid non-relevant news
   const query = encodeURIComponent('"Formula 1" OR "F1" OR "Formula One"');
-  const domains = "planetf1.com,racingnews365.com,f1i.com,wtf1.com";
+  const domains = "autosport.com,motorsport.com,skysports.com,bbc.co.uk,espn.com";
   
   const res = await fetch(
     `https://newsapi.org/v2/everything?q=${query}&domains=${domains}&language=en&sortBy=publishedAt&apiKey=9100d728b3e64b11bbb74f60c264fd9d`,
